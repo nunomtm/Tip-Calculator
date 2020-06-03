@@ -353,6 +353,12 @@ footer .wrapper {
 
 /* Media Query Starts Here */
 
+@media (max-width: 1440px) {
+	.container {
+		margin: 115px auto;
+	}
+}
+
 @media (max-width: 415px) {
 	.container {
 		width: 340px;
