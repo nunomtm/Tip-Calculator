@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='icon' href='./asset/favicon.ico' type='image/x-icon' />
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tip Carculator</h1>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="calculator">
+                <form>
+                    <label>How much is your bill?</label>
+                    <input type="text" name="billAmount" class="billAmount" placeholder="$$ Bill Amount $$">
+                    
+                    <label>How was the service?</label>
+                    <select name="tipAmount" class="tipAmount">
+                        <option disabled selected value="0">Choose a tip</option>
+                        <option value="0.25">25% - Outsanding!</option>
+                        <option value="0.2">20% - Good!</option>
+                        <option value="0.15">15% - It was okay!</option>
+                        <option value="0.1">10% - Meh!</option>
+                    </select>
+                    
+                    <label>How many people sharing the bill?</label>
+                    <input type="text" name="numOfPeople" class="numOfPeople" placeholder="# of People">
+                    <input type="submit" class="calculate" value="Calculate!">
+                </form>
+            </div>
+            
+            <div class="totalTip">
+                <div>
+                    <sup>$</sup><span class="tip"></span>
+                </div>
+                <h4 class="each">Per Person</h4>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <p><span class="white">Copyright &copy;</span> Nuno Macedo Web Developer</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./tip.js"></script>
+
+</body>
+</html>
