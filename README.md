@@ -1,4 +1,4 @@
-<img src="/screenShopTipCalculator.png>
+<img src="/screenShotTipCalculator.png">
 
 
 ## Tip Calculator
