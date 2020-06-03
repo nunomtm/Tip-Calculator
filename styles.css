@@ -228,25 +228,12 @@ body {
 	background-image: url(./asset/money.png);
 }
 
-main {
-	min-height: 75vh;
-}
-
-.container {
-	height: 500px;
-	width: 500px;
-	background-color: black;
-	border-radius: 15px;
-	box-shadow: 5px 5px 6px rgb(238, 165, 56);
-	margin: 150px auto;
-}
-
 header {
 	background-color: #000;
 	min-height: 5vh;
 }
 
-h1 {
+header h1 {
 	font-size: 40px;
 	font-style: italic;
 	font-weight: bold;
@@ -256,23 +243,38 @@ h1 {
 	padding: 0;
 }
 
-form {
+main {
+	min-height: 90vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding-top: 50px;
+}
+
+.container {
+	height: 500px;
+	width: 500px;
+	background-color: black;
+	border-radius: 15px;
+	box-shadow: 5px 5px 6px rgb(238, 165, 56);
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 30px;
 }
 
 label {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	font-size: 20px;
+	font-size: 25px;
 	font-weight: bold;
 	text-align: center;
 	color: orange;
-	padding: 10px;
+	padding: 15px;
 }
 
 input,
@@ -306,7 +308,7 @@ input,
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 30px;
+	padding-top: 30px;
 }
 
 sup,
@@ -353,15 +355,18 @@ footer .wrapper {
 
 /* Media Query Starts Here */
 
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) {
 	.container {
 		margin: 115px auto;
 	}
-}
+} */
 
 @media (max-width: 415px) {
 	.container {
 		width: 340px;
+	}
+	form {
+		padding-top: 15px;
 	}
 }
 
@@ -377,6 +382,12 @@ footer .wrapper {
 @media (max-width: 320px) {
 	.container {
 		width: 280px;
-		margin: 20px auto;
+		height: 455px;
+	}
+	form {
+		padding-top: 5px;
+	}
+	label {
+		font-size: 20px;
 	}
 }
