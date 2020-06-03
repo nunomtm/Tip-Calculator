@@ -1,3 +1,5 @@
+<img src="/asset/ScreenShopTipCalculator.png">
+
 
 ## Tip Calculator
 The Tip Calculator app is easier way for you to tip your server based on their service and the ammount of people splitting the bill.
